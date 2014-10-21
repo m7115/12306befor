@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@drawable/u_tab_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tab_bg_select" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="3.0dip" android:src="@drawable/u_tab_shadow_select" android:layout_centerInParent="true" android:contentDescription="@string/r_imageview" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/tab_image" android:layout_width="34.0dip" android:layout_height="31.0dip" android:layout_alignParentLeft="true" android:contentDescription="@string/r_imageview" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/tab_image">
+            <TextView android:textSize="16.0sp" android:id="@id/tab_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="8.0sp" android:id="@id/tab_name_english" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tab_name" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

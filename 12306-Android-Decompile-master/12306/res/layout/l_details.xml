@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/details_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/details_titles" android:layout_width="fill_parent" android:layout_height="75.0dip">
+        <ImageView android:id="@id/details_logo" android:layout_width="@dimen/layout_width_details_logo" android:layout_height="@dimen/layout_height_details_logo" android:layout_marginLeft="@dimen/layout_marginLeft_details_logo" android:layout_marginTop="@dimen/layout_marginTop_details_logo" android:src="@drawable/u_list_logo" android:contentDescription="@string/r_imageview" />
+        <TextView android:textSize="@dimen/details_name_size" android:textColor="@color/details_name" android:id="@id/details_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_details_name_versionname_apksize" android:layout_marginTop="@dimen/layout_marginTop_details_name" android:ems="7" android:singleLine="true" android:layout_toRightOf="@id/details_logo" />
+        <TextView android:textSize="@dimen/details_version_name_size" android:textColor="@color/details_describe" android:id="@id/details_versionName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_details_name_versionname_apksize" android:layout_toRightOf="@id/details_logo" android:layout_below="@id/details_name" />
+        <TextView android:textSize="@dimen/details_apksize_size" android:textColor="@color/details_describe" android:id="@id/details_apkSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_marginLeft_details_name_versionname_apksize" android:layout_toRightOf="@id/details_logo" android:layout_below="@id/details_versionName" />
+        <ImageView android:id="@id/details_close" android:layout_width="38.0dip" android:layout_height="38.0dip" android:src="@drawable/u_details_close_x" android:layout_alignParentRight="true" android:contentDescription="@string/r_imageview" />
+        <Button android:id="@id/details_action" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="invisible" android:layout_width="@dimen/layout_width_details_action" android:layout_height="@dimen/layout_height_details_action" android:layout_marginTop="@dimen/layout_marginTop_details_action" android:layout_marginRight="@dimen/layout_marginRight_details_action" android:text="立即下载" android:layout_below="@id/details_close" android:layout_alignParentRight="true" android:contentDescription="@string/r_imageview" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/scroll" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="350.0dip" android:layout_below="@id/details_titles">
+        <RelativeLayout android:id="@id/rldetails" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Gallery android:id="@id/details_gallery_screenshot" android:background="@color/details_gallery_bg" android:layout_width="fill_parent" android:layout_height="273.0dip" android:spacing="5.0dip" android:layout_below="@id/details_titles" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/details_gallery_screenshot">
+                <ImageView android:background="@drawable/u_details_gallery_above" android:layout_width="fill_parent" android:layout_height="10.0dip" android:contentDescription="@string/r_imageview" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/details_gallery_screenshot">
+                <ImageView android:background="@drawable/u_details_gallery_below" android:layout_width="fill_parent" android:layout_height="10.0dip" android:contentDescription="@string/r_imageview" />
+            </RelativeLayout>
+            <TextView android:id="@id/details_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/details_gallery_screenshot" />
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout android:background="@color/details_download" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_below="@id/scroll">
+        <RelativeLayout android:id="@id/dl01" android:background="@drawable/u_details_download_bg_x" android:layout_width="fill_parent" android:layout_height="37.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+            <ImageView android:background="@drawable/u_details_download_x" android:layout_width="88.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

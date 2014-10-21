@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tvvv" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/galleryRalative" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/gallery_rl_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/gallery_background" android:background="@drawable/u_home_gallery_shadow_tile" android:layout_width="fill_parent" android:layout_height="100.0dip" android:contentDescription="@string/r_imageview" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/gallery_rl_background1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <ImageView android:background="@drawable/u_home_gallery_shadow_l" android:layout_width="95.0dip" android:layout_height="100.0dip" android:contentDescription="@string/r_imageview" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/gallery_rl_background2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:background="@drawable/u_home_gallery_shadow_r" android:layout_width="95.0dip" android:layout_height="100.0dip" android:contentDescription="@string/r_imageview" />
+        </RelativeLayout>
+        <cn.domob.ui.DGallery android:id="@id/gallery1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/gallery_rl_background" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:soundEffectsEnabled="false" />
+        <LinearLayout android:gravity="center" android:id="@id/gallery_point_linear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:layout_alignBottom="@id/gallery_rl_background" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/galleryRalative">
+        <ImageView android:background="@drawable/u_home_gallery_above_shadow" android:layout_width="fill_parent" android:layout_height="5.0dip" android:contentDescription="@string/r_imageview" />
+    </RelativeLayout>
+    <ImageView android:id="@id/tv" android:background="#ff999999" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/galleryRalative" android:contentDescription="@string/r_imageview" />
+</RelativeLayout>

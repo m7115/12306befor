@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">铁路12306</string>
+    <string name="push_notification_title">铁路12306</string>
+    <string name="error">Error</string>
+    <string name="close">Close</string>
+    <string name="summaryWLServerUrl">Change the server URL: http[s]://domain or IP address[:port][/context root]</string>
+    <string name="titleWLServerUrl">Server URL</string>
+    <string name="networkSettingsTitleWLServerUrl">Network Settings</string>
+    <string name="OKTitleWLServerUrl">Ok</string>
+    <string name="titleInvalidWLServerUrl">Invalid URL</string>
+    <string name="errorInvalidWLServerUrl">is not a valid URL. Valid format is http[s]://domain or IP address[:port][/context root]</string>
+    <string name="serverAddress">Server Address</string>
+    <string name="changeServerAddress">Change server URL</string>
+    <string name="wlWebResourcesCategory">Web Resources</string>
+    <string name="wlAppIdTitle">App ID</string>
+    <string name="wlAppVersionTitle">App Version</string>
+    <string name="downloadingWebResourcesMessage">应用下载中...</string>
+    <string name="directUpdateDownloadingMessage">应用更新中...</string>
+    <string name="tab_app">应用</string>
+    <string name="tab_game">游戏</string>
+    <string name="tab_all">全部</string>
+    <string name="tab_app_english">APPS</string>
+    <string name="tab_game_english">GAMES</string>
+    <string name="tab_all_english">ALLAPPS</string>
+    <string name="home_bar_back">返回</string>
+    <string name="home_bar_title">精品推荐</string>
+    <string name="r_imageview">r_imageview</string>
+    <string name="foot_more">正在加载更多</string>
+</resources>

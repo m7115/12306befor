@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/wall_entry" android:background="@color/c_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_click" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击模式--请求数据" />
+        <Button android:id="@id/btn_click_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击模式--展现数据" android:layout_below="@id/btn_click" />
+        <Button android:id="@id/btn_difhandle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="把手模式" android:layout_below="@id/btn_click_show" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/handleview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</RelativeLayout>

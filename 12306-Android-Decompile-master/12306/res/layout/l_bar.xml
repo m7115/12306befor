@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title" android:background="@drawable/title_bar_background" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/c_white" android:id="@id/bar_button_more" android:background="@drawable/go_back_title_button_defult" android:layout_width="90.0dip" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/bar_button_marginLeft" android:text="更多功能" android:layout_centerVertical="true" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/c_white" android:id="@id/bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商旅休闲" android:layout_centerInParent="true" />
+    <ImageView android:visibility="invisible" android:layout_width="@dimen/layout_width_bar_logo" android:layout_height="@dimen/layout_height_bar_logo" android:layout_marginRight="10.0dip" android:src="@drawable/u_bar_logo" android:layout_alignParentRight="true" android:contentDescription="@string/r_imageview" />
+</RelativeLayout>

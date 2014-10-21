@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title" android:background="@drawable/u_home_bar_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/bar_height">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/l_home_bar" />
+    </RelativeLayout>
+    <TabHost android:id="@*android:id/tabhost" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/l_home_list_tab" />
+    </TabHost>
+    <RelativeLayout android:id="@id/onlylistRelativeS" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/l_home_list" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/home_progress_rl" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <ProgressBar android:id="@id/home_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/home_progress_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

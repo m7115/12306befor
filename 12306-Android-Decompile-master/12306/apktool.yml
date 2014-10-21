@@ -1,0 +1,12 @@
+version: 1.5.2
+apkFileName: 12306-android-1127sc.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '8'
+packageInfo:
+  cur_package: com.MobileTicket
+  orig_package: com.MobileTicket
+compressionType: false

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tab_default">#ff333333</color>
+    <color name="tab_select">#ffcd2903</color>
+    <color name="details_text_color">#ff000000</color>
+    <color name="list_bg">#ffffffff</color>
+    <color name="list_name_d">#ff333333</color>
+    <color name="list_name">#ffe64216</color>
+    <color name="details_bg">#ffffffff</color>
+    <color name="details_name">#ff333333</color>
+    <color name="details_download">#ffebebeb</color>
+    <color name="details_gallery_bg">#ffebebeb</color>
+    <color name="list_download">#ffbbbbbb</color>
+    <color name="list_describe">#ff999999</color>
+    <color name="list_apksize">#ffbbbbbb</color>
+    <color name="details_describe">#ff999999</color>
+    <color name="list_footer">#ffbbbbbb</color>
+    <color name="c_white">#ffffffff</color>
+    <color name="c_black">#ff000000</color>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title" android:background="@drawable/u_home_bar_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/c_white" android:id="@id/bar_button" android:background="@drawable/u_bar_back_x" android:layout_width="@dimen/bar_button_width" android:layout_height="@dimen/bar_button_height" android:layout_marginLeft="@dimen/bar_button_marginLeft" android:layout_marginTop="@dimen/bar_button_marginTop" android:text="@string/home_bar_back" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/c_white" android:id="@id/bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_bar_title" android:layout_centerInParent="true" />
+    <ImageView android:layout_width="@dimen/layout_width_bar_logo" android:layout_height="@dimen/layout_height_bar_logo" android:layout_marginRight="10.0dip" android:src="@drawable/u_bar_logo" android:layout_alignParentRight="true" android:contentDescription="@string/r_imageview" />
+</RelativeLayout>

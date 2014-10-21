@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/lsit_logo" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/u_list_logo" android:layout_centerVertical="true" android:contentDescription="@string/r_imageview" />
+    <ImageView android:id="@id/lsit_logo_new" android:background="@drawable/u_list_iocn_new" android:layout_width="31.0dip" android:layout_height="18.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/r_imageview" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/lsit_logo" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/list_name_size" android:textColor="@drawable/u_list_name_color" android:id="@id/list_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/list_describe_size" android:textColor="@color/list_describe" android:ellipsize="end" android:id="@id/list_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:width="225.0dip" android:singleLine="true" android:layout_below="@id/list_name" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/list_actiontype_relative" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true">
+        <RelativeLayout android:id="@id/list_actiontype_bg" android:background="@drawable/u_list_btnbg" android:layout_width="50.0dip" android:layout_height="32.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textColor="@color/c_white" android:id="@id/list_actiontype" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下载" android:layout_centerInParent="true" android:contentDescription="@string/r_imageview" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/list_download_size" android:textColor="@color/list_download" android:gravity="center" android:id="@id/list_action_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_below="@id/list_actiontype_bg" android:layout_alignRight="@id/list_actiontype_bg" />
+        <RelativeLayout android:id="@id/apksize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/list_actiontype_bg" android:layout_alignParentTop="true">
+            <TextView android:textSize="10.0sp" android:textColor="@color/list_apksize" android:id="@id/list_apksize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10M" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
